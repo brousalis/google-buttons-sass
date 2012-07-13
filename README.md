@@ -18,7 +18,7 @@ In your Gemfile:
 
     gem 'sass-rails', '~> 3.1'
     gem 'bootstrap-sass', '~> 2.0.4.0'
-    gem 'google-buttons-sass', '~> 0.1.0'
+    gem 'google-buttons-sass'
 
 #### CSS
 
