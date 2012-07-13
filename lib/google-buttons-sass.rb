@@ -1,4 +1,4 @@
-module Bootstrap
+module GoogleButtons
   class FrameworkNotFound < StandardError; end
 
   # Inspired by Kaminari
@@ -15,7 +15,7 @@ module Bootstrap
       register_rails_engine
       require 'google-buttons-sass/rails_functions'
     else
-      raise Bootstrap::FrameworkNotFound, "google-button-sass requires either Rails > 3.1 or Compass, neither of which are loaded"
+      raise GoogleButtons::FrameworkNotFound, "google-button-sass requires either Rails > 3.1 or Compass, neither of which are loaded"
     end
   end
 
@@ -40,4 +40,4 @@ module Bootstrap
   end
 end
 
-Bootstrap.load!
+GoogleButtons.load!
