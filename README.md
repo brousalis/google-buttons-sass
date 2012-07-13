@@ -1,9 +1,10 @@
 # Google Buttons for Sass
-## Based on [Thomas McDonald's Bootstrap-sass](https://github.com/thomas-mcdonald/bootstrap-sass) and [CSS3 Google Buttons by Tim O'Donnell](https://github.com/todc/css3-google-buttons)
 
 `google-buttons-sass` is an Sass-powered version of [CSS3 Google Buttons by Tim O'Donnell](https://github.com/todc/css3-google-buttons), ready to drop right into your Sass powered applications.
 
-This project requires [Twitter Bootstra](http://twitter.github.com/bootstrap), which can be installed via gem `bootstrap-sass`
+This gem is based off of `bootstrap-sass`, a project by [Thomas McDonald](https://twitter.com/#!/thomasmcdonald_). I replaced Twitter Bootstrap with the Google Buttons project.
+
+This project requires [Twitter Bootstrap](http://twitter.github.com/bootstrap), which can be installed via gem `bootstrap-sass`
 
 Enjoy.
 
@@ -15,7 +16,7 @@ In your Gemfile:
 
     gem 'sass-rails', '~> 3.1'
     gem 'bootstrap-sass', '~> 2.0.4.0'
-    gem 'google-butons-sass', '~> 1.0'
+    gem 'google-buttons-sass', '~> 0.1.0'
 
 #### CSS
 
@@ -85,7 +86,4 @@ Some CSS3 properties take multiple values, such as `box-shadow` or `text-shadow`
 
 ### Bundler?
 
-    gem 'google-buttons-sass', '~> 1'
-
-## Who
-bootstrap-sass is a project by [Thomas McDonald](https://twitter.com/#!/thomasmcdonald_), with support from [other awesome people](https://github.com/thomas-mcdonald/bootstrap-sass/graphs/contributors).
+    gem 'google-buttons-sass', '~> 0.1.0'
