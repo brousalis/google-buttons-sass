@@ -2,7 +2,7 @@
 
 `google-buttons-sass` is an Sass-powered version of [CSS3 Google Buttons by Tim O'Donnell](https://github.com/todc/css3-google-buttons), ready to drop right into your Sass powered applications.
 
-This gem is based off of `bootstrap-sass`, a project by [Thomas McDonald](https://twitter.com/#!/thomasmcdonald_). I replaced Twitter Bootstrap with the Google Buttons project.
+This gem is based off of [bootstrap-sass](https://github.com/thomas-mcdonald/bootstrap-sass), a project by [Thomas McDonald](https://twitter.com/#!/thomasmcdonald_). I replaced Twitter Bootstrap with the Google Buttons project.
 
 This project requires [Twitter Bootstrap](http://twitter.github.com/bootstrap), which can be installed via gem `bootstrap-sass`
 
