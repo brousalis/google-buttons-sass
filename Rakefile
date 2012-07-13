@@ -8,13 +8,16 @@ end
 desc 'Dumps output to a CSS file for testing'
 task :debug do
   require 'sass'
-  require './lib/bootstrap-sass/compass_functions'
-  require './lib/bootstrap-sass/rails_functions'
+  require './lib/google-buttons-sass/compass_functions'
+  require './lib/google-buttons-sass/rails_functions'
+
   path = './vendor/assets/stylesheets'
-  %w(bootstrap bootstrap-responsive).each do |file|
-    engine = Sass::Engine.for_file("#{path}/_#{file}.scss", syntax: :scss, load_paths: [path])
-    File.open("./#{file}.css", 'w') { |f| f.write(engine.render) }
-  end
+  file = 'google-buttons'
+
+  engine = Sass::Engine.for_file("#{path}/_#{file}.scss", syntax: :scss, load_paths: [path])
+  File.open("./#{file}.css", 'w') { |f| f.write(engine.render) }
 end
 
 task default: :test
+
+

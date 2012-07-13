@@ -1,18 +1,17 @@
-description "Bootstrap for Sass"
+description "Google Buttons for Sass"
 
-# Stylesheet importing bootstrap
+# Stylesheet importing Google Buttons
 stylesheet 'styles.scss'
 
-#
-# Other Bootstrap assets
+# Other Google Button assets
 basedir = '../../vendor/assets'
 
-# Glyphicons sprites
-%w(glyphicons-halflings glyphicons-halflings-white).each do |file|
+# Images
+%w(checkmark.png grey-disclosure-arrow-up-down.png).each do |file|
   image "#{basedir}/images/#{file}.png", :to => "#{file}.png"
 end
 
 # Javascripts
-%w(alert button carousel collapse dropdown modal popover scrollspy tab tooltip transition typeahead).each do |file|
-  javascript "#{basedir}/javascripts/bootstrap-#{file}.js", :to => "bootstrap-#{file}.js"
+%w(bootstrap-popover google-select-dropdown.js google-select.js).each do |file|
+  javascript "#{basedir}/javascripts/#{file}.js", :to => "#{file}.js"
 end

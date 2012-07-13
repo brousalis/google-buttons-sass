@@ -1,0 +1,36 @@
+// POPOVERS
+// --------
+
+.popover {
+  &.top .arrow          { #popoverArrowBig > @include top(); }
+  &.top .arrowbefore    { #popoverArrowBig > @include top(10px, #bbb); }
+
+  &.right .arrow        { #popoverArrowBig > @include right(); }
+  &.right .arrowbefore  { #popoverArrowBig > @include right(10px, #bbb); }
+
+  &.bottom .arrow       { #popoverArrowBig > @include bottom(); }
+  &.bottom .arrowbefore { #popoverArrowBig > @include bottom(10px, #bbb); }
+
+  &.left .arrow         { #popoverArrowBig > @include left();  }
+  &.left .arrowbefore   { #popoverArrowBig > @include left(10px, #bbb);  }
+
+  .arrowbefore {
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+}
+.popover-inner {
+  padding: 0px;
+  border: 1px solid;
+  border-color: #bbb #bbb #a8a8a8;
+  background: #bbb; // has to be full background declaration for IE fallback
+  @include border-radius(0);
+  @include box-shadow(0 1px 3px rgba(0,0,0,0.2));
+}
+.popover-title {
+  @include border-radius(0);
+}
+.popover-content {
+  @include border-radius(0);
+}
