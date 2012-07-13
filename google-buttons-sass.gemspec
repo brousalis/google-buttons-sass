@@ -8,6 +8,7 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'compass'
   s.add_development_dependency 'sass-rails', '~> 3.1'
+  s.add_development_dependency 'bootstrap-sass', '~> 2.0.4.0'
 
   s.files = Dir["vendor/**/*.{scss,js,png}"] + Dir["lib/**/*"] + Dir["templates/**/*"] + ["README.md", "LICENSE"]
 end

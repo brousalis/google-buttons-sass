@@ -14,7 +14,7 @@ task :debug do
   path = './vendor/assets/stylesheets'
   file = 'google-buttons'
 
-  engine = Sass::Engine.for_file("#{path}/_#{file}.scss", syntax: :scss, load_paths: [path])
+  engine = Sass::Engine.for_file("#{path}/#{file}.scss", syntax: :scss, load_paths: [path])
   File.open("./#{file}.css", 'w') { |f| f.write(engine.render) }
 end
 

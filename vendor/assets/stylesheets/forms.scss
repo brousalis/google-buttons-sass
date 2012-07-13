@@ -57,7 +57,7 @@ input[type="color"],
 .uneditable-input {
   border: 1px solid #d9d9d9;
   border-top: 1px solid #c0c0c0;
-  @include border-radius(@inputBorderRadius);
+  @include border-radius($inputBorderRadius);
   @include box-shadow(none);
   @include transition(none);
 
@@ -114,7 +114,7 @@ input[type="radio"]:checked {
   background: #fff;
 }
 input[type="checkbox"]:checked::after {
-  content: asset-url("checkmark.png", image) !default;
+  content: asset-url("checkmark.png", image);
   display: block;
   position: absolute;
   top: -6px;
@@ -224,6 +224,6 @@ select:focus:required:invalid {
   right: 6px;
   width: 7px;
   height: 11px;
-  background-image: asset-url("grey-disclosure-arrow-up-down.png", image) !default;
+  background-image: asset-url("grey-disclosure-arrow-up-down.png", image);
   background-repeat: no-repeat;
 }
