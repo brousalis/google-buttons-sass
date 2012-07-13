@@ -6,6 +6,8 @@ This gem is based off of [bootstrap-sass](https://github.com/thomas-mcdonald/boo
 
 This project requires [Twitter Bootstrap](http://twitter.github.com/bootstrap), which can be installed via gem `bootstrap-sass`
 
+You can see a demo of the gem [here](http://blog.timodonnell.com/css3-google-buttons/index.html).
+
 Enjoy.
 
 ## Usage
