@@ -1,6 +1,6 @@
 # Google Buttons for Sass
 
-`google-buttons-sass` is an Sass-powered version of [CSS3 Google Buttons by Tim O'Donnell](https://github.com/todc/css3-google-buttons), ready to drop right into your Sass powered applications.
+`google-buttons-sass` is an SASS-powered version of [CSS3 Google Buttons by Tim O'Donnell](https://github.com/todc/css3-google-buttons), ready to drop right into your Rails apps.
 
 This gem is based off of [bootstrap-sass](https://github.com/thomas-mcdonald/bootstrap-sass), a project by [Thomas McDonald](https://twitter.com/#!/thomasmcdonald_). I replaced Twitter Bootstrap with the Google Buttons project.
 
@@ -17,8 +17,11 @@ Enjoy.
 In your Gemfile:
 
     gem 'sass-rails', '~> 3.1'
-    gem 'bootstrap-sass', '~> 2.0.4.0'
     gem 'google-buttons-sass'
+
+If you don't have Twitter Bootstrap assets installed into your project manually, you may want to install [bootstrap-sass](https://github.com/thomas-mcdonald/bootstrap-sass):
+
+    gem 'bootstrap-sass', '~> 2.0.4.0'
 
 #### CSS
 
@@ -77,15 +80,3 @@ Need to configure a variable or two? Simply define the value of the variable you
     @import "google-buttons";
 
 **Note**: It's important that the file you are importing is not named `google-buttons`, since this will cause an import loop. As a general rule, errors are something you should try to avoid.
-
-### Passing multiple values to mixins
-
-Some CSS3 properties take multiple values, such as `box-shadow` or `text-shadow`. To pass multiple values to the Bootstrap mixins, you must escape the values or else the Sass parser will choke on the commas. Here's how to escape the values in Sass:
-
-    .selector {
-      @include box-shadow(#{0 2px 5px rgba(0,0,0,.25) inset, 0 -2px 5px rgba(0,0,0,.25) inset});
-    }
-
-### Bundler?
-
-    gem 'google-buttons-sass', '~> 0.1.0'
