@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name = "google-buttons-sass"
-  s.version = '0.1.3'
-  s.authors = ["Thomas McDonald, Tim O'Donnell, Pete Brousalis"]
+  s.version = '0.1.2'
+  s.authors = ["Pete Brousalis, Thomas McDonald, Tim O'Donnell"]
   s.email = 'brousapg@gmail.com'
   s.description = "Tim O'Donnell's CSS3 Google Buttons coverted to SASS including images and javascript. This gem is based on Thomas McDonald's bootstrap-sass gem."
   s.summary = "Tim O'Donnell's CSS3 Google Buttons coverted to SASS and ready for include. Based on Thomas McDonald's bootstrap-sass gem."
