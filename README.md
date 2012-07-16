@@ -29,6 +29,8 @@ Import "google-buttons" in your SCSS file of choice to get all of the styles, mi
 
     @import "google-buttons";
 
+If you prefer the compiled CSS version, you can find it in the main directory of the repo, `google-buttons.css`
+
 #### Javascripts
 
 You can include the javascript through two methods. In this case, Sprocket's `//= require` directives are useful, since there is no better alternative.
